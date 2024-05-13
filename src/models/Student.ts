@@ -10,6 +10,6 @@ const studentSchema = new mongoose.Schema<Student>({
     email: { type: String, required: true, unique: true }
 });
 
-const StudentModel = mongoose.model<Student>('Professor', studentSchema);
+const StudentModel = mongoose.model<Student>('Student', studentSchema);
 
 export { Student, StudentModel }
